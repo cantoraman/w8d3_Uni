@@ -4,6 +4,8 @@ package models;
 
         import javax.persistence.*;
 
+@Entity
+@Table(name="mentors")
 public class Mentor {
 
     private int id;
@@ -13,10 +15,10 @@ public class Mentor {
     public Mentor() {
     }
 
-    public Mentor(String name, Student student) {
+    public Mentor(String name) {
 
         this.name = name;
-        this.student = student;
+
     }
 
     @Id
